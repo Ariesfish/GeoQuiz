@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:text="@string/question_australia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/questionTextView"
+            android:padding="24dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:layout_margin="16dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" android:fontFamily="sans-serif-medium"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal">
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/true_button"
+                android:id="@+id/trueButton" android:textSize="18sp"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/false_button"
+                android:id="@+id/falseButton" android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cheatButton"
+            android:text="@string/cheat_button"
+            android:layout_gravity="bottom|center_horizontal" android:textSize="18sp"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prevButton"
+            android:src="@drawable/arrow_left"
+            android:drawablePadding="4dp"
+            android:layout_gravity="bottom|start"
+            android:contentDescription="@string/description_previous"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nextButton"
+            android:src="@drawable/arrow_right"
+            android:drawablePadding="4dp"
+            android:layout_gravity="bottom|end"
+            android:contentDescription="@string/description_next"/>
+
+</FrameLayout>

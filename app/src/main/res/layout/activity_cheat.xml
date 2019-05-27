@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CheatActivity"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <TextView
+            android:text="@string/warning_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="24dp" android:textSize="18sp" android:fontFamily="sans-serif-medium"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:id="@+id/answerTextView"
+            tools:text="Answer" android:textSize="18sp" android:fontFamily="sans-serif-medium"/>
+
+    <Button
+            android:text="@string/show_answer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showAnswerButton" android:textSize="18sp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cheatCountTextView" android:fontFamily="sans-serif-medium" android:textSize="18sp"/>
+
+</LinearLayout>
