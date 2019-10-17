@@ -36,9 +36,10 @@ class CheatActivity : AppCompatActivity() {
         val answer = intent.getBooleanExtra(EXTRA_ANSWER, false)
         val cheatCount = intent.getIntExtra(EXTRA_CHEAT_COUNT, 3)
 
-        if (isAnswerShown) showAnswer(answer)
+        if (isAnswerShown)
+            showAnswer(answer)
 
-        cheatCountTextView.text = "Left cheat count is $cheatCount"
+        cheatCountTextView.text = String.format(resources.getString(R.string.cheat_count), cheatCount)
 
         showAnswerButton.setOnClickListener {
             showAnswer(answer)
@@ -59,8 +60,9 @@ class CheatActivity : AppCompatActivity() {
 
     private fun showAnswer(answer: Boolean) {
         answerTextView.setText(
-            if (answer) R.string.true_button
-            else R.string.false_button
-        )
+            when(answer) {
+                true -> R.string.true_button
+                false -> R.string.false_button
+        })
     }
 }
